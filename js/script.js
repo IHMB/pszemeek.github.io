@@ -100,10 +100,16 @@ $("body").keydown(function(e){
 //document.querySelector('body').addEventListener('wheel',moveSectionByScroll);
 
 var planeta = document.querySelector('.planet');
-var chmurka = document.querySelector('.chmurka');
+var factory = document.querySelector('.fabryka');
 
 planeta.addEventListener('click',function(){
-	
+
 	$('.chmurka').toggleClass('chmurka_active');
+
+});
+
+factory.addEventListener('click',function(){
+
+	$('#cloud__factory').toggleClass('chmurka_active');
 
 });
