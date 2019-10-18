@@ -1,0 +1,78 @@
+
+		.mapdiv{
+			width:90vw;
+			height: 100vh;
+			margin:auto;
+		}
+		.mapdiv path{
+			fill:white !important;
+			stroke:green !important;
+			stroke-width:50px;
+			transition: .5s ease-in-out;
+            cursor: pointer;
+			
+		}
+		.mapdiv a:hover path{
+			fill:lightgreen!important;
+		}
+		.info-close{
+			width:30px;
+			height:30px;
+			border-radius:50px;
+			position:absolute;
+			top:-10px;
+			right:-10px;
+			background-image: url(close.svg);
+			cursor: pointer;
+		}
+		.info-container{
+			position: absolute;
+			top: 0;
+			left:0;
+			background-color: rgba(200,200,200,0.5);
+			width:100vw;
+			height:100vh;
+			display:none;
+			justify-content: center;
+			align-items: center;
+			
+
+		}
+		.info{
+			position: relative;
+			width:800px;
+			height:70%;
+
+			
+			background-color: #eee;
+			border-radius:15px;
+			border:5px solid green;
+			text-align: center;
+			display:flex;
+			align-items: center;
+			justify-content: space-around;
+			flex-wrap: wrap;
+
+
+		}
+		.info-image img{
+			width:300px;
+			height:400px;
+
+		}
+		.info-image p{
+			font-weight: 600;
+			font-size:25px;
+		}
+		.info-text{
+			font-size:20px;
+			line-height: 40px;
+			margin-bottom:50px;
+		}
+		.info-text p{
+			color:green;
+			font-weight: 600;
+		}
+		.apoln-numbers{
+			color:red;
+		}
