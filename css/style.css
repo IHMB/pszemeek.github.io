@@ -113,22 +113,28 @@ li.active--menu a {
     left: 33%;
 }
 .chmurka{
-  width:500px;
-  height:300px;
+  width: 500px;
+  height: 300px;
   background-image: url('../img/chmura.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
   display: flex;
   align-items: center;
-  padding:0px 50px 0px 50px;
-  position:absolute;
-  top:20%;
-  left:45%;
-  font-size:20px;
+  justify-content: center;
+  position: absolute;
+  top: 20%;
+  left: 45%;
+  font-size: 20px;
   transform: scale(0);
   transition: .5s ease-in-out;
+  /* padding: 0 20px; */
+  /* text-align: center; */
+}
 
+.chmurka span {
+  text-align: center;
+  width: 70%;
 }
 
 .chmurka_active{
@@ -153,7 +159,7 @@ li.active--menu a {
     top: 20.5%;
     right: 2%;
     transform: scale(0.57);
-    
+
 }
 
 .factory {
@@ -259,4 +265,3 @@ li.active--menu a {
       box-shadow: 0 0 0 0 rgba(255,165,0, 0);
   }
 }
-
