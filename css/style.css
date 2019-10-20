@@ -12,6 +12,19 @@ html {
     padding: 0;
 }
 
+.arrow {
+  position: absolute;
+  bottom: 2%;
+  right: 50%;
+  cursor: pointer;
+  /* transform: rotate(90deg); */
+}
+
+.arrow img {
+  height: 40px;
+}
+
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -19,6 +32,7 @@ body {
 header {
     background-color: black;
     height: 100vh;
+    position: relative;
     width: 100%;
 }
 
@@ -159,7 +173,12 @@ li.active--menu a {
     top: 20.5%;
     right: 2%;
     transform: scale(0.57);
+}
 
+.map {
+  background-color: black;
+  display: flex;
+  justify-content: center;
 }
 
 .factory {
@@ -170,7 +189,7 @@ li.active--menu a {
   /* background-position: bottom; */
 }
 
-.fabryka {
+.wykrzyknik {
     height: 106px;
     width: 106px;
     border: 3px solid white;
@@ -179,14 +198,41 @@ li.active--menu a {
     justify-content: center;
     align-items: center;
     background: rgba(255,165,0,1);
-    position: absolute;
     cursor: pointer;
-    bottom: 56%;
-    left: 13%;
     animation: pulse2 1.5s infinite;
 }
 
-.fabryka span {
+.powietrze {
+  position: absolute;
+  bottom: 73%;
+  right: 10%;
+}
+
+.fabryka {
+  position: absolute;
+  bottom: 56%;
+  left: 13%;
+}
+
+.las {
+  position: absolute;
+  bottom: 25%;
+  right: 8%;
+}
+
+.ziemia {
+  position: absolute;
+  bottom: 55%;
+  left: 12%;
+}
+
+.woda {
+  position: absolute;
+  bottom: 70%;
+  right: 22%;
+}
+
+.format {
     font-size: 80px;
     color: white;
 }
@@ -211,6 +257,10 @@ li.active--menu a {
   background-repeat: no-repeat;
   /* height: 100%; */
   /* background-position: bottom; */
+}
+
+.separator {
+  background-color: black;
 }
 
 
