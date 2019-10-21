@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 
 html {
 /*scroll-behavior: smooth;*/
@@ -50,23 +50,24 @@ nav ul {
     position: fixed;
     z-index: 99;
     top: 40%;
-    width: 3%;
+    width: 5%;
 }
 
 nav ul li {
     position: relative;
-    padding: 15% 50%;
+    padding: 7% 50%;
     cursor: pointer;
     width: 100%;
 }
 
 nav ul li a {
+  white-space: nowrap;
     position: absolute;
     left: 8px;
     top: 0;
-    padding: 15% 50%;
+    padding: 7% 50%;
     color: white;
-    text-decoration: non
+    text-decoration: none;
     transition: .3s;
     opacity: 0;
 }
@@ -146,9 +147,30 @@ li.active--menu a {
   /* text-align: center; */
 }
 
+/* HEADER */
+.header-wrapper {
+  margin: 0 auto;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+.safe-earth {
+  font-family: 'Oswald', sans-serif;
+  font-size: 80px;
+  color: white;
+}
+
 .chmurka span {
   text-align: center;
-  width: 70%;
+  margin: 0 auto;
+  width: 80%;
+
 }
 
 .chmurka_active{
