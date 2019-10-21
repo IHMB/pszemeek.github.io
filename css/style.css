@@ -168,7 +168,9 @@ li.active--menu a {
 
 .chmurka span {
   text-align: center;
-  width: 70%;
+  margin: 0 auto;
+  width: 80%;
+
 }
 
 .chmurka_active{
