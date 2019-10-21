@@ -28,7 +28,8 @@
                      <li class="menu" value="5" > <a onclick="item(5)">MAPA</a></li>
                      <li class="menu" value="6" > <a onclick="item(6)">LASY</a></li>
                      <li class="menu" value="7" > <a onclick="item(7)">ZIEMIA</a></li>
-                     <li class="menu" value="8" > <a onclick="item(8)">WODA</a></li>
+                     <li class="menu" value="8" > <a onclick="item(8)">KALKULATOR</a></li>
+                     <li class="menu" value="9" > <a onclick="item(9)">WODA</a></li>
                  </ul>
              </nav>
              <div class="arrow">
@@ -656,6 +657,34 @@
               Średni rozkład papierowej chusteczki wynosi 3 miesiące, biletu autobusowego  4 miesiące, jednej zapałki – 6 miesięcy, puszki blaszanej do 50 lat, puszki aluminiowej – 80–100 lat, plastikowej reklamówki – 300 lat, <em>plastikowej butelki – 400 lat.</em>
             </span>
           </div>
+        </section>
+        <section class="section calc" id="calculator">
+          <div class="calculator-wrapper">
+
+            <form class="calculator" name="calc" action="post">
+
+            <h1>KALKULATOR</h1>
+            <label for="country">Wybierz kraj</label>
+            <!-- kraj z bazy danych-->
+            <select name="country" form="calc">
+              <!-- kraje z bazy danych -->
+              <!--   <option value="audi">Audi</option>-->
+            </select>
+
+            <!-- miasto z bazy danych -->
+            <label for="city">Wybierz miasto</label>
+            <select name="city" form="calc">
+              <!-- kod wrzucajacy miasta z bazy -->
+            </select>
+
+            <!-- pole number dla ilu osob -->
+            <label for="ile">Podaj dla ilu osób chcesz obliczyc</label>
+            <input type="number" name="ile">
+
+            <button type="submit">OBLICZ!</button>
+          </form>
+        </div>
+
         </section>
 
         <section class="section water" id="ddd">
