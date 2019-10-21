@@ -160,6 +160,10 @@ li.active--menu a {
   color: white;
 }
 
+.about {
+  background: black;
+}
+
 .safe-earth {
   font-family: 'Oswald', sans-serif;
   font-size: 80px;
