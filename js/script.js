@@ -1,9 +1,19 @@
 let selected = 0;
 let isanimating = false;
 
-const sections = Array('#header','#hehe','#tam','#co','#elo','#fds','#fsd','#ddd');
+
+const sections = Array('#header','#hehe','#tam','#co','#elo','#hej','#fds','#fsd','#ddd');
 
 console.log(sections)
+
+let arrow = () => {
+  if (selected == 0)
+  item(1);
+  else return;
+}
+
+const arrowHandler = document.querySelector('.arrow');
+arrowHandler.addEventListener('click',arrow);
 
 
 let item = (e) => { //toggling selected nav item
@@ -101,15 +111,43 @@ $("body").keydown(function(e){
 
 var planeta = document.querySelector('.planet');
 var factory = document.querySelector('.fabryka');
+var air = document.querySelector('.powietrze');
+var forest = document.querySelector('.las');
+var ground = document.querySelector('.ziemia');
+var water = document.querySelector('.woda');
 
 planeta.addEventListener('click',function(){
 
-	$('.chmurka').toggleClass('chmurka_active');
+	$('#cloud_cosmos').toggleClass('chmurka_active');
 
 });
 
 factory.addEventListener('click',function(){
 
 	$('#cloud__factory').toggleClass('chmurka_active');
+
+});
+
+air.addEventListener('click',function(){
+
+	$('#cloud__air').toggleClass('chmurka_active');
+
+});
+
+forest.addEventListener('click',function(){
+
+	$('#cloud__forest').toggleClass('chmurka_active');
+
+});
+
+ground.addEventListener('click',function(){
+
+	$('#cloud__ground').toggleClass('chmurka_active');
+
+});
+
+water.addEventListener('click',function(){
+
+	$('#cloud__water').toggleClass('chmurka_active');
 
 });
