@@ -24,12 +24,19 @@ html {
   height: 40px;
 }
 /* CALCULATOR */
-.calculator-wrapper {
-  border: 1px solid white;
-  color: white;
+.calculator select, input, button {
   width: 50%;
-  height: 100%;
+  cursor: pointer;
+  font-family: Oswald;
+  font-size: 40px;
+  margin: 3% auto;
+}
+
+.calculator-wrapper {
   margin: 0 auto;
+  width: 70%;
+  height: 100%;
+  border: 1px solid white;
 }
 
 .calc{
@@ -37,28 +44,45 @@ html {
   color: white;
   text-align: center;
   font-family: Oswald;
-  font-size: 30px;
+  font-size: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.calc h1 {
+.calc-left {
+  float: left;
+  width: 50%;
+  height: 100%;
+  border: 1px red solid;
+  display: flex;
+  flex-direction: column;
+}
+
+.calc-right {
+  height: 100%;
+  width: 50%;
+  border: blue 1px solid;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator-wrapper h1 {
   font-size: 56px;
+  margin: 0 auto;
 }
 
 .calculator {
+  width: 100%;
+  /* margin: auto 0; */
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.calculator select, input, button {
-  width: 30%;
-  /* height: 30px; */
-  cursor: pointer;
-  font-family: Oswald;
-  font-size: 30px;
-  margin: 2% auto;
 
-}
 
 /* END OF CALCULATOR */
 
