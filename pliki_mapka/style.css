@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 		.mapdiv{
 			width:90vw;
 			height: auto;
@@ -7,9 +7,10 @@
 .mapdiv h1{
 	margin: 20px auto 0 auto;
 	width: 60%;
+	font-family: Oswald;
 	text-align: center;
 	color: white;
-	font-size: 41px;
+	font-size: 48px;
 	line-height: 60px;
 }
 

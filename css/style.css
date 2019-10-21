@@ -23,7 +23,44 @@ html {
 .arrow img {
   height: 40px;
 }
+/* CALCULATOR */
+.calculator-wrapper {
+  border: 1px solid white;
+  color: white;
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+}
 
+.calc{
+  background: black;
+  color: white;
+  text-align: center;
+  font-family: Oswald;
+  font-size: 30px;
+}
+
+.calc h1 {
+  font-size: 56px;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.calculator select, input, button {
+  width: 30%;
+  /* height: 30px; */
+  cursor: pointer;
+  font-family: Oswald;
+  font-size: 30px;
+  margin: 2% auto;
+
+}
+
+/* END OF CALCULATOR */
 
 body {
     font-family: 'Montserrat', sans-serif;
