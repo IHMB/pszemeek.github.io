@@ -643,7 +643,7 @@
           </div>
           <div class="chmurka" id="cloud__forest">
             <span>
-              
+
             </span>
           </div>
         </section>
@@ -661,28 +661,38 @@
         <section class="section calc" id="calculator">
           <div class="calculator-wrapper">
 
-            <form class="calculator" name="calc" action="post">
-
             <h1>KALKULATOR</h1>
-            <label for="country">Wybierz kraj</label>
-            <!-- kraj z bazy danych-->
-            <select name="country" form="calc">
-              <!-- kraje z bazy danych -->
-              <!--   <option value="audi">Audi</option>-->
-            </select>
 
-            <!-- miasto z bazy danych -->
-            <label for="city">Wybierz miasto</label>
-            <select name="city" form="calc">
-              <!-- kod wrzucajacy miasta z bazy -->
-            </select>
+            <div class="calc-left">
+              <!-- zdjecie -->
+            </div>
 
-            <!-- pole number dla ilu osob -->
-            <label for="ile">Podaj dla ilu osób chcesz obliczyc</label>
-            <input type="number" name="ile">
 
-            <button type="submit">OBLICZ!</button>
-          </form>
+            <div class="calc-right">
+              <form class="calculator" name="calc" action="post">
+
+
+              <label for="country">Wybierz kraj</label>
+              <!-- kraj z bazy danych-->
+              <select name="country" form="calc">
+                <!-- kraje z bazy danych -->
+                <!--   <option value="audi">Audi</option>-->
+              </select>
+
+              <!-- miasto z bazy danych -->
+              <label for="city">Wybierz miasto</label>
+              <select name="city" form="calc">
+                <!-- kod wrzucajacy miasta z bazy -->
+              </select>
+
+              <!-- pole number dla ilu osob -->
+              <label for="ile">Podaj dla ilu osób chcesz obliczyc</label>
+              <input type="number" name="ile">
+
+              <button type="submit">OBLICZ!</button>
+
+              </form>
+            </div>
         </div>
 
         </section>
