@@ -16,9 +16,9 @@
 
 
 		.mapdiv path{
-			fill:white !important;
-			stroke:green !important;
-			stroke-width:50px;
+			fill: #5fe3c2 !important;
+			stroke: #09b3bf !important;
+			stroke-width: 50px;
 			transition: .5s ease-in-out;
       cursor: pointer;
 
