@@ -2,7 +2,7 @@ let selected = 0;
 let isanimating = false;
 
 
-const sections = Array('#header','#hehe','#tam','#co','#elo','#hej','#fds','#fsd','#calculator','#ddd');
+const sections = Array('#header','#hehe','#tam','#co','#elo','#hej','#fds','#fsd','#calculator','#what','#ddd');
 
 console.log(sections)
 
