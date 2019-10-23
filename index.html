@@ -39,12 +39,27 @@
 
              <div class="header-wrapper">
               <span class="safe-earth">SAFE EARTH - OUR EARTH</span>
-              <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam nam tenetur mollitia, dolorem commodi natus.</h1>
+              <h1>TO OD NAS ZALEŻY JAK WYGLĄDA ŚRODOWISKO, W KTÓRYM ŻYJEMY!</h1>
              </div>
         </header>
 
 
-        <section class="about section" id="hehe"></section>
+        <section class="about section" id="hehe">
+          <div class="about-wrapper">
+            <div class="about-wrapper-row">
+              <div class="post"></div>
+              <div class="post"></div>
+              <div class="post"></div>
+            </div>
+
+            <div class="about-wrapper-row">
+              <div class="post"></div>
+              <div class="post"></div>
+              <div class="post"></div>
+            </div>
+
+          </div>
+        </section>
         <section class="section cosmos" id="tam">
 
             <div class="planet"></div>
@@ -652,9 +667,10 @@
           </div>
         </section>
         <section class="section calc" id="calculator">
+          <span>WItaj w Naszym kalkulatorze, obliczysz tu ilość generowanych odpadów przez ludzi w różnych krajach! Możesz wpisać ilość członków Twojej rodziny i sprawdzić ile statystycznie śmieci wyprodukowalibyście w poszczególnych krajach.</span>
           <div class="calculator-wrapper">
 
-            <h1>KALKULATOR</h1>
+
 
             <div class="calc-left">
               <!-- zdjecie -->
@@ -665,22 +681,22 @@
               <form class="calculator" name="calc" action="post">
 
 
-              <label for="country">Wybierz kraj</label>
+              <label for="continent">Wybierz kontynent</label>
               <!-- kraj z bazy danych-->
-              <select name="country" form="calc">
+              <select name="continent" form="calc">
                 <!-- kraje z bazy danych -->
                 <!--   <option value="audi">Audi</option>-->
               </select>
 
               <!-- miasto z bazy danych -->
-              <label for="city">Wybierz miasto</label>
-              <select name="city" form="calc">
+              <label for="country">Wybierz kraj</label>
+              <select name="country" form="calc">
                 <!-- kod wrzucajacy miasta z bazy -->
               </select>
 
               <!-- pole number dla ilu osob -->
               <label for="ile">Podaj dla ilu osób chcesz obliczyc</label>
-              <input type="number" name="ile">
+              <input type="number" name="ile" min="0">
 
               <button type="submit">OBLICZ!</button>
 
