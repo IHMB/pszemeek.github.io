@@ -7,8 +7,7 @@ const sections = Array('#header','#hehe','#tam','#co','#elo','#hej','#fds','#fsd
 console.log(sections)
 
 let arrow = () => {
-  if (selected == 0)
-  item(1);
+  if (selected == 0) item(1);
   else return;
 }
 
