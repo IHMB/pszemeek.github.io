@@ -150,3 +150,17 @@ water.addEventListener('click',function(){
 	$('#cloud__water').toggleClass('chmurka_active');
 
 });
+
+let kalkualtorHandle = document.querySelector('#oblicz');
+
+
+let oblicz = () => {
+  let continent = document.querySelector('#continent').value;
+  let country = document.querySelector('#country').value;
+  let ile = document.querySelector('#ile').value;
+  var kalkulator__wynik = document.querySelector('#kalkulator__wynik');
+  
+  kalkulator__wynik.src = "../kalkulator.php?continent="+continent+"&country="+country+"&ile="+ile;
+}
+
+kalkualtorHandle.addEventListener('click',oblicz);
