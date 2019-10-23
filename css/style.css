@@ -101,11 +101,24 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: white;
+}
+
+.post h2{
+  padding: 4% 4%;
+  font-size: 44px;
+  font-size: Oswald;
+  font-variant: small-caps;
+}
+
+.post p {
+  padding: 4% 4%;
+  font-size: 21px;
 }
 
 .post {
-  border: 1px solid white;
-  height: 80%;
+  /* border: 1px solid white; */
+  /* height: 80%; */
   width: 25%;
 }
 
