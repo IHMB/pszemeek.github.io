@@ -2,7 +2,7 @@ let selected = 0;
 let isanimating = false;
 
 
-const sections = Array('#header','#hehe','#tam','#co','#elo','#hej','#fds','#fsd','#calculator','#what','#ddd');
+const sections = Array('#header','#about','#cosmos','#air','#factory','#calculator','#forest','#ground','#what','#map','#water');
 
 console.log(sections)
 
@@ -159,7 +159,7 @@ let oblicz = () => {
   let country = document.querySelector('#country').value;
   let ile = document.querySelector('#ile').value;
   var kalkulator__wynik = document.querySelector('#kalkulator__wynik');
-  
+
   kalkulator__wynik.src = "../kalkulator.php?continent="+continent+"&country="+country+"&ile="+ile;
 }
 

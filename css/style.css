@@ -158,6 +158,7 @@ header {
 nav {
     height: 100%;
     position:absolute;
+    z-index: 99;
 }
 
 nav ul {
@@ -325,7 +326,7 @@ li.active--menu a {
     position: absolute;
     box-shadow: 0 0 0 rgba(204,169,44, 0.4);
     border-radius: 50%;
-    animation: pulse 2s infinite;
+    animation: pulse 1s infinite;
     cursor: pointer;
     top: 27%;
     left: 33%;
@@ -362,9 +363,21 @@ li.active--menu a {
   flex-direction: column;
   text-align: center;
   color: white;
-  z-index: 99;
+  z-index: 88;
   text-shadow: 2px 2px #333333;
+}
 
+.author-credit {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  z-index: 99;
+}
+
+
+.author-credit a{
+  color: rgba(255,255,255,0.3);
+  text-decoration: none;
 }
 
 .header-wrapper h1 {
@@ -413,9 +426,21 @@ li.active--menu a {
 }
 
 .map {
-  background-color: black;
+  background-color: #ABEDFF;
+  margin: auto auto;
   display: flex;
   justify-content: center;
+  /* padding: 20px 0; */
+}
+
+.map-bg {
+  height: 100%;
+  /* width: auto; */
+  /* position: absolute; */
+  background: url(../img/mapa_tlo.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .factory {
@@ -496,9 +521,7 @@ li.active--menu a {
   /* background-position: bottom; */
 }
 
-.separator {
-  background-color: black;
-}
+
 
 
 @-webkit-keyframes pulse {
@@ -517,9 +540,9 @@ li.active--menu a {
     -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0.8);
     box-shadow: 0 0 0 0 rgba(204,169,44, 0.8);
   }
-  70% {
-      -moz-box-shadow: 0 0 0 70px rgba(204,169,44, 0.6);
-      box-shadow: 0 0 0 100px rgba(204,169,44, 0);
+  95% {
+      -moz-box-shadow: 0 0 0 70px rgba(204,169,44, 0);
+      box-shadow: 0 0 0 70px rgba(204,169,44, 0);
   }
   100% {
       -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);

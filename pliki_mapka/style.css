@@ -5,19 +5,20 @@
 			margin:auto;
 		}
 .mapdiv h1{
-	margin: 20px auto 0 auto;
+	margin: 1% auto 0 auto;
 	width: 60%;
+	text-shadow: 2px 2px #333333;
 	font-family: Oswald;
 	text-align: center;
-	color: white;
-	font-size: 48px;
-	line-height: 60px;
+	color: #FAFAFA;
+	font-size: 50px;
+	line-height: 52px;;
 }
 
 
 		.mapdiv path{
-			fill: #5fe3c2 !important;
-			stroke: #09b3bf !important;
+			fill: #04BE39 !important;
+			stroke: #1E9B2F !important;
 			stroke-width: 50px;
 			transition: .5s ease-in-out;
       cursor: pointer;
