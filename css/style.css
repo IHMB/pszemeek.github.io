@@ -138,11 +138,22 @@ body {
 }
 
 header {
-    background-color: black;
     height: 100vh;
     position: relative;
     width: 100%;
+    /* background movie */
+
 }
+
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 59;
+}
+
 
 nav {
     height: 100%;
@@ -160,6 +171,9 @@ nav ul {
     top: 40%;
     width: 5%;
 }
+
+
+
 
 nav ul li {
     position: relative;
@@ -294,7 +308,7 @@ li.active--menu a {
 
 }
 .what-img:hover {
-  
+
 }
 .cosmos {
   background-image: url('../img/cosmos.png');
@@ -338,15 +352,23 @@ li.active--menu a {
 
 /* HEADER */
 .header-wrapper {
-  margin: 0 auto;
+
+  position: absolute;
   height: 100%;
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
   color: white;
+  z-index: 99;
+  text-shadow: 2px 2px #333333;
+
+}
+
+.header-wrapper h1 {
+  width: 42%;
 }
 
 .about {
