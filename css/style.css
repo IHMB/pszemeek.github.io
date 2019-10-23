@@ -435,12 +435,15 @@ li.active--menu a {
 
 .map-bg {
   height: 100%;
+  position: relative;
   /* width: auto; */
   /* position: absolute; */
   background: url(../img/mapa_tlo.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  display: flex;
+  justify-content: center;
 }
 
 .factory {
