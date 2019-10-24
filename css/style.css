@@ -95,7 +95,7 @@ html {
 
 /* about section */
 #about{
-  background-image: linear-gradient(black, #0e1e34);
+  background-image: linear-gradient(black 0%, #0e1e34 60%);
 }
 .about-wrapper {
   display: flex;
@@ -489,7 +489,7 @@ li.active--menu a {
 }
 
 .map {
-  background-image: linear-gradient(#ABEDFF 10%, #15434f 30%);
+  background-image: linear-gradient(#ABEDFF,#15434f );
   padding: 20px 0;
 }
 
