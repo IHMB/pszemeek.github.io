@@ -279,11 +279,12 @@ li.active--menu a {
 
 /* loader */
 .spinner{
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
+    background: url(../img/serce.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 
-    border: 2px solid #f3f3f3;
-    border-top:3px solid #f25a41;
     border-radius: 100%;
 
     position: absolute;
@@ -297,11 +298,21 @@ li.active--menu a {
 }
 
 @keyframes spin {
-    from{
-        transform: rotate(0deg);
-    }to{
-        transform: rotate(360deg);
-    }
+  0% {
+    transform: scale(1);
+  }
+  15% {
+      transform: scale(1.8);
+  }
+  30%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.8);
+  }
+  100% {
+      transform: scale(1);
+  }
 }
 
 .overlay{
