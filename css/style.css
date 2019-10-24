@@ -17,6 +17,7 @@ html {
   bottom: 2%;
   right: 50%;
   cursor: pointer;
+  z-index: 99;
   /* transform: rotate(90deg); */
 }
 
@@ -427,23 +428,21 @@ li.active--menu a {
 
 .map {
   background-color: #ABEDFF;
-  margin: auto auto;
-  display: flex;
+  /* margin: auto auto; */
+  /* display: flex; */
   justify-content: center;
   /* padding: 20px 0; */
 }
 
 .map-bg {
   height: 100%;
-  position: relative;
-  /* width: auto; */
-  /* position: absolute; */
   background: url(../img/mapa_tlo.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .factory {
