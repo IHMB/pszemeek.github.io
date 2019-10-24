@@ -31,7 +31,18 @@ window.addEventListener('load', function(){
   setTimeout(loader,2000);
 })
 
+//hamburger
 
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('.navigation--mobile');
+
+
+const handleClick = () => {
+  hamburger.classList.toggle('hamburger--active');
+  nav.classList.toggle('navigation--mobile--active');
+}
+
+hamburger.addEventListener('click', handleClick);
 
 
 let item = (e) => { //toggling selected nav item

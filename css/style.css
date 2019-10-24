@@ -169,7 +169,7 @@ nav {
     align-items: center;
 }
 
-nav ul {
+nav ul.navigation {
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -183,14 +183,14 @@ nav ul {
 
 
 
-nav ul li {
+nav ul.navigation li {
     position: relative;
     padding: 3% 50%;
     cursor: pointer;
     width: 100%;
 }
 
-nav ul li a {
+nav ul.navigation li a {
   white-space: nowrap;
     position: absolute;
     left: 8px;
@@ -202,12 +202,12 @@ nav ul li a {
     opacity: 0;
 }
 
-nav ul li a:hover {
+nav ul.navigation  li a:hover {
     opacity: 1;
     transition: .3s;
 }
 
-ul li::before {
+ul.navigation  li::before {
     opacity: 0.8;
     padding-right: 5px;
     content: '';
@@ -255,7 +255,8 @@ li.active--menu a {
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content:center;
+  justify-content: space-around;
+  /* align-items: center; */
   flex-direction: row;
 }
 
@@ -688,12 +689,101 @@ li.active--menu a {
 
 
 /* media */
-
-
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
 /* hamburger menu */
+nav ul.navigation {
+  display: none;
+}
+
+.hamburger {
+    position: absolute;
+  padding: 50px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.hamburger, .navigation--mobile {
+  transition: transform .3s .1s ease-in-out;
+}
+
+.hamburger--active {
+  transform: translatex(300px);
+}
+
+.hamburger__box {
+  width: 35px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
+
+
+.hamburger__inner {
+  width: 100%;
+  height: 3px;
+  background-color: #ffff;
+  position: absolute;
+
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color .1s .2s ease-in-out;
+}
+
+.hamburger__inner::before,
+.hamburger__inner::after {
+  width: 100%;
+  height: 3px;
+  background-color: #ffff;
+  position: absolute;
+
+  content: '';
+  left: 0;
+  transition: transform .2s .2s ease-in-out;
+}
+
+.hamburger__inner::before {
+  top: -10px;
+}
+
+.hamburger__inner::after {
+  top: 10px;
+}
+
+.hamburger--active .hamburger__inner {
+  background-color: transparent;
+}
+
+.hamburger--active .hamburger__inner:before {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger--active .hamburger__inner:after {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+.navigation--mobile {
+  width: 33%;
+  z-index: 99;
+  height: 100%;
+  display: none;
+}
+
+.navigation--mobile--active {
+  display: flex;
+  flex-direction: column;
+}
+
 
 
 
 
 
 /* header section */
+}
