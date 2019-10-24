@@ -1,12 +1,4 @@
-
-
-let selected = 0;
-let isanimating = false;
-
-
-const sections = Array('#header','#about','#cosmos','#air','#factory','#calculator','#forest','#ground','#what','#map','#water');
-
-console.log(sections)
+// scrolling arrow in header
 
 let arrow = () => {
   if (selected == 0) item(1);
@@ -16,12 +8,13 @@ let arrow = () => {
 const arrowHandler = document.querySelector('.arrow');
 arrowHandler.addEventListener('click',arrow);
 
+// loader
+
 var overlay = document.querySelector(".overlay");
 
 function loader() {
   overlay.classList.toggle('overlay-disabled');
   overlay.style.zIndex='0';
-  console.log('elo');
 
   var video = document.querySelector('#myVideo');
   video.play()
@@ -31,7 +24,7 @@ window.addEventListener('load', function(){
   setTimeout(loader,2000);
 })
 
-//hamburger
+//hamburger and mobile menu
 
 const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector('.navigation--mobile');
@@ -44,6 +37,13 @@ const handleClick = () => {
 
 hamburger.addEventListener('click', handleClick);
 
+// desktop nav onclick
+
+let selected = 0;
+let isanimating = false;
+
+
+const sections = Array('#header','#about','#cosmos','#air','#factory','#calculator','#forest','#ground','#what','#map','#water');
 
 let item = (e) => { //toggling selected nav item
     if(isanimating)
@@ -51,11 +51,15 @@ let item = (e) => { //toggling selected nav item
 
     isanimating = true;
 
-    let wrapper = document.querySelector('li[value="'+selected+'"]');
-    wrapper.classList.toggle('active--menu');
+    let wrapper = document.querySelectorAll('li[value="'+selected+'"]');
+    console.log(wrapper)
+    wrapper[0].classList.toggle('active--menu');
+    wrapper[1].classList.toggle('active--menu');
     selected = e;
-    wrapper = document.querySelector('li[value="'+selected+'"]');
-    wrapper.classList.toggle('active--menu');
+    wrapper = document.querySelectorAll('li[value="'+selected+'"]');
+    console.log(wrapper)
+    wrapper[0].classList.toggle('active--menu');
+    wrapper[1].classList.toggle('active--menu');
 
     $('html,body').animate({
         scrollTop: $(sections[e]).offset().top},
@@ -67,6 +71,8 @@ let item = (e) => { //toggling selected nav item
 
 
 }
+
+// scrolling up
 
 window.addEventListener('wheel', function(event)
 {
@@ -81,11 +87,15 @@ window.addEventListener('wheel', function(event)
 
 	 isanimating = true;
 
-	 let wrapper = document.querySelector('li[value="'+selected+'"]');
-	 wrapper.classList.toggle('active--menu');
+	 let wrapper = document.querySelectorAll('li[value="'+selected+'"]');
+   console.log(wrapper)
+   wrapper[0].classList.toggle('active--menu');
+   wrapper[1].classList.toggle('active--menu');
 	 selected--;
-	 wrapper = document.querySelector('li[value="'+selected+'"]');
-	 wrapper.classList.toggle('active--menu');
+	 wrapper = document.querySelectorAll('li[value="'+selected+'"]');
+   console.log(wrapper)
+   wrapper[0].classList.toggle('active--menu');
+   wrapper[1].classList.toggle('active--menu');
 	 $('html,body').animate({
         scrollTop: $(sections[selected]).offset().top},
         'slow');
@@ -94,6 +104,8 @@ window.addEventListener('wheel', function(event)
 	 setTimeout(function() {
         isanimating = false;
     }, 500);
+
+// scrolling down
 
  }
  else if (event.deltaY > 0)
@@ -107,11 +119,14 @@ window.addEventListener('wheel', function(event)
 
 	 isanimating = true;
 
-	 let wrapper = document.querySelector('li[value="'+selected+'"]');
-	 wrapper.classList.toggle('active--menu');
+	 let wrapper = document.querySelectorAll('li[value="'+selected+'"]');
+   wrapper[0].classList.toggle('active--menu');
+   wrapper[1].classList.toggle('active--menu');
 	 selected++;
-	 wrapper = document.querySelector('li[value="'+selected+'"]');
-	 wrapper.classList.toggle('active--menu');
+	 wrapper = document.querySelectorAll('li[value="'+selected+'"]');
+   console.log(wrapper)
+   wrapper[0].classList.toggle('active--menu');
+   wrapper[1].classList.toggle('active--menu');
 	 $('html,body').animate({
         scrollTop: $(sections[selected]).offset().top},
         'slow');
@@ -124,6 +139,7 @@ window.addEventListener('wheel', function(event)
  }
 });
 
+// f5 button starts on top of site
 
 $("body").keydown(function(e){
     if(e.which==116){
@@ -136,7 +152,7 @@ $("body").keydown(function(e){
 
 
 
-//document.querySelector('body').addEventListener('wheel',moveSectionByScroll);
+// clouds
 
 var planeta = document.querySelector('.planet');
 var factory = document.querySelector('.fabryka');
@@ -180,6 +196,8 @@ water.addEventListener('click',function(){
 	$('#cloud__water').toggleClass('chmurka_active');
 
 });
+
+// calculator
 
 let kalkualtorHandle = document.querySelector('#oblicz');
 
