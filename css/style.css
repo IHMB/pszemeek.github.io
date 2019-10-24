@@ -95,7 +95,7 @@ html {
 
 /* about section */
 #about{
-  background-image: linear-gradient(black, #0e1e34);
+  background-image: linear-gradient(black 0%, #0e1e34 60%);
 }
 .about-wrapper {
   display: flex;
@@ -105,6 +105,7 @@ html {
   justify-content: center;
   align-items: center;
   color: white;
+  padding-top: 3%;
 }
 
 .post h2{
@@ -128,7 +129,7 @@ html {
 .about-wrapper-row {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: baseline;
   height: 49%;
   width: 80%;
 
@@ -162,6 +163,8 @@ nav {
     height: 100%;
     position:absolute;
     z-index: 98;
+    display: flex;
+    align-items: center;
 }
 
 nav ul {
@@ -172,7 +175,6 @@ nav ul {
     color: white;
     position: fixed;
     z-index: 98;
-    top: 40%;
     width: 5%;
 }
 
@@ -181,7 +183,7 @@ nav ul {
 
 nav ul li {
     position: relative;
-    padding: 7% 50%;
+    padding: 3% 50%;
     cursor: pointer;
     width: 100%;
 }
@@ -488,7 +490,7 @@ li.active--menu a {
 }
 
 .map {
-  background-image: linear-gradient(#ABEDFF, #15434f);
+  background-image: linear-gradient(#ABEDFF,#15434f );
   padding: 20px 0;
 }
 
