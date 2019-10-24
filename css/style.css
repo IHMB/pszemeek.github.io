@@ -428,16 +428,11 @@ li.active--menu a {
 
 .map {
   background-image: linear-gradient(#ABEDFF, #15434f);
-padding: 20px 0;
-  /* margin: auto auto; */
-  /* display: flex; */
-  justify-content: center;
-  /* padding: 20px 0; */
+  padding: 20px 0;
 }
 
 .map-bg {
   height: 100%;
-
   background: url(../img/mapa_tlo.svg);
   background-position: center;
   background-repeat: no-repeat;
