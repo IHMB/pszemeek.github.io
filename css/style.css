@@ -94,7 +94,9 @@ html {
 /* END OF CALCULATOR */
 
 /* about section */
-
+#about{
+  background-image: linear-gradient(black, #0e1e34);
+}
 .about-wrapper {
   display: flex;
   height: 100%;
