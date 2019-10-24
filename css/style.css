@@ -21,7 +21,7 @@ body {
   bottom: 2%;
   left: 45%;
   cursor: pointer;
-  z-index: 98;
+  z-index: 97;
   /* transform: rotate(90deg); */
 }
 
@@ -455,7 +455,7 @@ ul.navigation li.active--menu a {
   position: absolute;
   right: 10px;
   bottom: 10px;
-  z-index: 98;
+  z-index: 97;
 }
 
 
@@ -694,9 +694,7 @@ ul.navigation li.active--menu a {
 
 /* media */
 @media (min-width: 320px) and (max-width: 1024px){
-  body {
-    overflow: auto;
-  }
+
 /* hamburger menu */
 nav ul.navigation {
   display: none;
@@ -705,7 +703,7 @@ nav ul.navigation {
 .mobile-menu {
   height: 100%;
   width: 20%;
-  position: fixed;
+  /* position: fixed; */
   display: flex;
   /* justify-content: center; */
   /* align-items: center; */
@@ -748,7 +746,7 @@ nav ul.navigation {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  transition: background-color .1s .2s ease-in-out;
+  transition: background-color .1s .1s ease-in-out;
 }
 
 .hamburger__inner::before,
@@ -760,7 +758,7 @@ nav ul.navigation {
 
   content: '';
   left: 0;
-  transition: transform .2s .2s ease-in-out;
+  transition: transform .1s .1s ease-in-out;
 }
 
 .hamburger__inner::before {
@@ -784,16 +782,15 @@ nav ul.navigation {
 }
 
 .navigation--mobile {
-  padding-top: 30%;
   height: 100%;
   z-index: 98;
   width: 100%;
   display: none;
+  position: fixed;
   color: white;
   font-size: 2vw;
   background-color: #333333;
   list-style: none;
-
 }
 
 ul.navigation--mobile li a {
@@ -802,6 +799,7 @@ ul.navigation--mobile li a {
 
 .navigation--mobile--active {
   display: flex;
+  
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
@@ -863,7 +861,7 @@ ul.navigation--mobile li a {
   }
 }
 
-@media (min-width: 768px){
+/* @media (max-width: 768px){
   .post p {
     font-size: 2.2vw;
   }
@@ -926,9 +924,27 @@ ul.navigation--mobile li a {
   .water .chmurka {
     top: 40%;
   }
-}
+} */
 
 @media (min-width: 320px) and (max-width: 768px){
+
+    .hamburger {
+      left: 5%;
+      top: 2%;
+    }
+
+  .mobile-menu {
+    width: 100%;
+  }
+
+  .navigation-mobile{
+    padding-top: 0;
+  }
+
+  .mobile-menu li {
+    font-size: 10vw;
+  }
+
   .post p {
     font-size: 6vw;
   }
@@ -973,31 +989,31 @@ ul.navigation--mobile li a {
   }
 
   .wykrzyknik {
-    width: 10%;
+    width: 20%;
   }
 
   .wykrzyknik span{
-    font-size: 6vw;
+    font-size: 15vw;
   }
 
   .cosmos .chmurka {
     top: 50%;
-    left: 30%;
+    left: 8%;
   }
 
   .forest .chmurka  {
     top: 40%;
-    left: 30%;
+    left: 8%;
   }
 
   .air .chmurka {
-    top: 30%;
-    left: 30%;
+    top: 50%;
+    left: 8%;
   }
 
   .chmurka {
-    width: 50%;
-    font-size: 2vw;
+    width: 90%;
+    font-size: 3.7vw;
   }
 
   .chmurka::before {
@@ -1007,6 +1023,20 @@ ul.navigation--mobile li a {
   }
 
   .water .chmurka {
-    top: 40%;
+    top: 50%;
+    left: 8%;
+  }
+
+  .factory .chmurka {
+    top: 50%;
+    left: 8%;
+  }
+  .ground .chmurka {
+    top: 50%;
+    left: 8%;
+  }
+
+  .planet {
+    width: 30%;
   }
 }

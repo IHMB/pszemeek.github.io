@@ -1,4 +1,16 @@
-// scrolling arrow in header
+let scrolling = false;
+
+
+if ($(window).width() < 1024) {
+   scrolling = true;
+   document.querySelector('body').classList.toggle('stop-scrolling');
+}
+else {
+  console.log('dsa');
+}
+
+
+
 
 let arrow = () => {
   if (selected == 0) item(1);
@@ -25,7 +37,7 @@ window.addEventListener('load', function(){
 })
 
 //hamburger and mobile menu
-
+let mmenu = document.querySelector('.navigation--mobile');
 const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector('.navigation--mobile');
 
@@ -33,6 +45,7 @@ const nav = document.querySelector('.navigation--mobile');
 const handleClick = () => {
   hamburger.classList.toggle('hamburger--active');
   nav.classList.toggle('navigation--mobile--active');
+  document.body.classList.toggle('stop-scrolling');
 }
 
 hamburger.addEventListener('click', handleClick);
@@ -76,6 +89,7 @@ let item = (e) => { //toggling selected nav item
 
 window.addEventListener('wheel', function(event)
 {
+  if(scrolling == true) return;
  if (event.deltaY < 0)
  {
 	 console.log(selected)
@@ -109,6 +123,7 @@ window.addEventListener('wheel', function(event)
 
  }
  else if (event.deltaY > 0)
+ if(scrolling == true) return;
  {
 	 console.log(selected)
 	 if(selected==sections.length-1)
@@ -148,6 +163,21 @@ $("body").keydown(function(e){
     }
 });
 
+let mlistItem = document.querySelectorAll('ul.navigation--mobile li');
+
+
+console.log(mlistItem)
+// function hideMobileMenu = () =>{
+//
+// }
+
+for (var i = 0; i < mlistItem.length; i++){
+  mlistItem[i].addEventListener('click', function(){
+    mmenu.classList.toggle('navigation--mobile--active');
+    hamburger.classList.toggle('hamburger--active');
+    document.body.classList.toggle('stop-scrolling');
+  });
+}
 
 
 
