@@ -110,28 +110,30 @@ html {
 
 .post h2{
   padding: 4% 4%;
-  font-size: 40px;
+  font-size: 2.5vw;
   font-size: Oswald;
   font-variant: small-caps;
 }
 
 .post p {
   padding: 4% 4%;
-  font-size: 21px;
+  font-size: 1.33vw;
 }
 
 .post {
   /* border: 1px solid white; */
-  /* height: 80%; */
-  width: 25%;
+  height: 100%;
+  width: 30%;
+  /* padding: 4% 4%; */
+
 }
 
 .about-wrapper-row {
   display: flex;
   justify-content: space-around;
   align-items: baseline;
-  height: 49%;
-  width: 80%;
+  height: 50%;
+  width: 70%;
 
 }
 
@@ -384,9 +386,11 @@ li.active--menu a {
 }
 
 .planet {
-    height: 172px;
-    width: 172px;
+    width: 8.958333333%;
     background-image: url('../img/planeta.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     position: absolute;
     box-shadow: 0 0 0 rgba(204,169,44, 0.4);
     border-radius: 50%;
@@ -394,6 +398,12 @@ li.active--menu a {
     cursor: pointer;
     top: 27%;
     left: 33%;
+}
+
+.planet::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
 }
 .chmurka{
   width: 500px;
@@ -512,18 +522,22 @@ li.active--menu a {
   /* height: 100%; */
   /* background-position: bottom; */
 }
-
+/* 106px */
 .wykrzyknik {
-    height: 106px;
-    width: 106px;
-    border: 3px solid white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 5.520833333%;
+    position: relative;
+    border-radius: 100%;
     background: rgba(255,165,0,1);
     cursor: pointer;
     animation: pulse2 1.5s infinite;
+    border: 3px white solid;
+}
+
+.wykrzyknik::before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+  /* border: 3px solid white; */
 }
 
 .powietrze {
@@ -557,7 +571,17 @@ li.active--menu a {
 }
 
 .format {
-    font-size: 80px;
+    font-size: 3vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
     color: white;
 }
 
@@ -663,3 +687,15 @@ li.active--menu a {
       box-shadow: 0 0 0 0 rgba(173,216,230, 0);
   }
 }
+
+
+/* media */
+
+
+/* hamburger menu */
+
+
+
+
+
+/* header section */
