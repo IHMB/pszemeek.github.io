@@ -427,7 +427,8 @@ li.active--menu a {
 }
 
 .map {
-  background-color: #ABEDFF;
+  background-image: linear-gradient(#ABEDFF, #15434f);
+
   /* margin: auto auto; */
   /* display: flex; */
   justify-content: center;
