@@ -94,7 +94,9 @@ html {
 /* END OF CALCULATOR */
 
 /* about section */
-
+#about{
+  background-image: linear-gradient(black, #0e1e34);
+}
 .about-wrapper {
   display: flex;
   height: 100%;
@@ -309,9 +311,7 @@ li.active--menu a {
   animation: habit 1.2s infinite;
 
 }
-.what-img:hover {
 
-}
 .cosmos {
   background-image: url('../img/cosmos.png');
   background-size: 100vw 100vh;
