@@ -17,7 +17,7 @@ html {
   bottom: 2%;
   right: 50%;
   cursor: pointer;
-  z-index: 99;
+  z-index: 98;
   /* transform: rotate(90deg); */
 }
 
@@ -161,7 +161,7 @@ header {
 nav {
     height: 100%;
     position:absolute;
-    z-index: 99;
+    z-index: 98;
 }
 
 nav ul {
@@ -171,7 +171,7 @@ nav ul {
     align-content: center;
     color: white;
     position: fixed;
-    z-index: 99;
+    z-index: 98;
     top: 40%;
     width: 5%;
 }
@@ -271,6 +271,52 @@ li.active--menu a {
   justify-content: space-around;
 }
 
+.overlay-disabled {
+  transition: all 1s ease-in-out;
+  opacity: 0;
+  z-index: 0;
+}
+
+/* loader */
+.spinner{
+    width: 80px;
+    height: 80px;
+
+    border: 2px solid #f3f3f3;
+    border-top:3px solid #f25a41;
+    border-radius: 100%;
+
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    margin: auto;
+
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+.overlay{
+  height:100%;
+  width:100%;
+  background:rgba(0, 0, 0, 1);
+  position:fixed;
+  left:0;
+  z-index: 99;
+  top:0;
+  /* transition: 1s; */
+ }
+
+/* end of loader */
+
 .what-left span {
   font-size: 19px;
   padding: 0 3%;
@@ -299,9 +345,13 @@ li.active--menu a {
 .what-img{
   width: 100px;
   height: 100px;
+
   border: 5px solid aqua;
   border-radius: 50%;
 
+}
+.what-img img{
+  transform: scale(0.85);
 }
 .what-right span:hover .what-img{
   animation: habit 1.2s infinite;
@@ -372,7 +422,7 @@ li.active--menu a {
   position: absolute;
   right: 10px;
   bottom: 10px;
-  z-index: 99;
+  z-index: 98;
 }
 
 

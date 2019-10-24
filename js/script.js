@@ -1,3 +1,5 @@
+
+
 let selected = 0;
 let isanimating = false;
 
@@ -13,6 +15,23 @@ let arrow = () => {
 
 const arrowHandler = document.querySelector('.arrow');
 arrowHandler.addEventListener('click',arrow);
+
+var overlay = document.querySelector(".overlay");
+
+function loader() {
+  overlay.classList.toggle('overlay-disabled');
+  overlay.style.zIndex='0';
+  console.log('elo');
+
+  var video = document.querySelector('#myVideo');
+  video.play()
+}
+
+window.addEventListener('load', function(){
+  setTimeout(loader,2000);
+})
+
+
 
 
 let item = (e) => { //toggling selected nav item
