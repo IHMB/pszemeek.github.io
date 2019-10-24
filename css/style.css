@@ -689,26 +689,25 @@ ul.navigation li.active--menu a {
 }
 
 .mobile-menu {
-  height: 100%;
-  width: 20%;
-  position: fixed;
-  display: flex;
-  z-index: -10;
-  /* justify-content: center; */
-  /* align-items: center; */
+  display: none;
 }
 
 /* media */
 @media (min-width: 320px) and (max-width: 1024px){
-  body {
-    overflow: auto;
-  }
+
 /* hamburger menu */
 nav ul.navigation {
   display: none;
 }
 
-
+.mobile-menu {
+  height: 100%;
+  width: 20%;
+  /* position: fixed; */
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
 
 .hamburger {
     position: fixed;
@@ -747,7 +746,7 @@ nav ul.navigation {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  transition: background-color .1s .2s ease-in-out;
+  transition: background-color .1s .1s ease-in-out;
 }
 
 .hamburger__inner::before,
@@ -759,7 +758,7 @@ nav ul.navigation {
 
   content: '';
   left: 0;
-  transition: transform .2s .2s ease-in-out;
+  transition: transform .1s .1s ease-in-out;
 }
 
 .hamburger__inner::before {
@@ -787,6 +786,7 @@ nav ul.navigation {
   z-index: 98;
   width: 100%;
   display: none;
+  position: fixed;
   color: white;
   font-size: 2vw;
   background-color: #333333;
@@ -799,6 +799,7 @@ ul.navigation--mobile li a {
 
 .navigation--mobile--active {
   display: flex;
+  
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
@@ -860,7 +861,7 @@ ul.navigation--mobile li a {
   }
 }
 
-@media (max-width: 768px){
+/* @media (max-width: 768px){
   .post p {
     font-size: 2.2vw;
   }
@@ -923,7 +924,7 @@ ul.navigation--mobile li a {
   .water .chmurka {
     top: 40%;
   }
-}
+} */
 
 @media (min-width: 320px) and (max-width: 768px){
 
@@ -988,31 +989,31 @@ ul.navigation--mobile li a {
   }
 
   .wykrzyknik {
-    width: 10%;
+    width: 20%;
   }
 
   .wykrzyknik span{
-    font-size: 6vw;
+    font-size: 15vw;
   }
 
   .cosmos .chmurka {
     top: 50%;
-    left: 30%;
+    left: 8%;
   }
 
   .forest .chmurka  {
     top: 40%;
-    left: 30%;
+    left: 8%;
   }
 
   .air .chmurka {
-    top: 30%;
-    left: 30%;
+    top: 50%;
+    left: 8%;
   }
 
   .chmurka {
-    width: 50%;
-    font-size: 2vw;
+    width: 90%;
+    font-size: 3.7vw;
   }
 
   .chmurka::before {
@@ -1022,11 +1023,20 @@ ul.navigation--mobile li a {
   }
 
   .water .chmurka {
-    top: 40%;
+    top: 50%;
+    left: 8%;
+  }
+
+  .factory .chmurka {
+    top: 50%;
+    left: 8%;
+  }
+  .ground .chmurka {
+    top: 50%;
+    left: 8%;
   }
 
   .planet {
     width: 30%;
-    z-index: 30;
   }
 }
