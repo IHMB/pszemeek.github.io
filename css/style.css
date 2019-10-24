@@ -12,10 +12,14 @@ html {
     padding: 0;
 }
 
+body {
+  width: 100%;
+}
+
 .arrow {
   position: absolute;
   bottom: 2%;
-  right: 50%;
+  left: 45%;
   cursor: pointer;
   z-index: 98;
   /* transform: rotate(90deg); */
@@ -25,13 +29,13 @@ html {
   height: 40px;
 }
 /* CALCULATOR */
-.calculator select, input, button {
+/* .calculator select, input, button {
   width: 50%;
   cursor: pointer;
   font-family: Oswald;
   font-size: 30px;
   margin: 3% auto;
-}
+} */
 
 .calculator-wrapper {
   margin: 0 auto;
@@ -407,8 +411,7 @@ ul.navigation li.active--menu a {
   padding-top: 100%;
 }
 .chmurka{
-  width: 500px;
-  height: 300px;
+  width: 26.041666666%;
   background-image: url('../img/chmura.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -424,6 +427,12 @@ ul.navigation li.active--menu a {
   transition: .5s ease-in-out;
   /* padding: 0 20px; */
   /* text-align: center; */
+}
+
+.chmurka::before {
+  content: '';
+  display: block;
+  padding-top: 56.25%;
 }
 
 /* HEADER */
@@ -489,17 +498,6 @@ ul.navigation li.active--menu a {
   /* background-position: bottom; */
 }
 
-.plane {
-    height: 238px;
-    width: 544px;
-    background-image: url('../img/plane.png');
-    position: absolute;
-    cursor: pointer;
-    top: 20.5%;
-    right: 2%;
-    transform: scale(0.57);
-}
-
 .map {
   background-image: linear-gradient(#ABEDFF,#15434f );
   padding: 20px 0;
@@ -532,6 +530,7 @@ ul.navigation li.active--menu a {
     cursor: pointer;
     animation: pulse2 1.5s infinite;
     border: 3px white solid;
+    z-index: 98;
 }
 
 .wykrzyknik::before {
@@ -694,7 +693,10 @@ ul.navigation li.active--menu a {
 }
 
 /* media */
-@media screen and (min-device-width: 0px) and (max-device-width: 1024px){
+@media (min-width: 320px) and (max-width: 1024px){
+  body {
+    overflow: auto;
+  }
 /* hamburger menu */
 nav ul.navigation {
   display: none;
@@ -702,26 +704,26 @@ nav ul.navigation {
 
 .mobile-menu {
   height: 100%;
-  width: 40%;
-  position: relative;
+  width: 20%;
+  position: fixed;
   display: flex;
-
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
 .hamburger {
-  position: fixed;
+    position: fixed;
+  /* padding: 50px; */
   display: inline-block;
   cursor: pointer;
   background-color: transparent;
   border: 0;
-  margin: auto;
-  /* padding: 40px; */
-  top: 3%;
-  left: 5%;
+  margin: 0;
   z-index: 99;
+  top: 3%;
+  left: 3%;
 }
+
 
 .hamburger, .navigation--mobile {
   transition: transform .3s .1s ease-in-out;
@@ -803,14 +805,208 @@ ul.navigation--mobile li a {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+}}
+
+@media (max-width: 1024px){
+  .post p {
+    font-size: 1.76vw;
+  }
+
+  .post {}
+
+  .about-wrapper-row {
+    width: 83%;
+  }
+
+  .post h2 {
+    font-size: 2.9vw;
+  }
+  .forest {
+    background-size: cover;
+    background-position: right;
+  }
+  .ground {
+    background-size: cover;
+    background-position: right;
+  }
+  .water {
+    background-size: cover;
+    background-position: center;
+  }
+  .whatCanIDo {
+    background-size: cover;
+    background-position: center;
+  }
+  .factory {
+    background-size: cover;
+    background-position: center;
+  }
+  .air {
+    background-size: cover;
+    background-position: center;
+  }
+  .cosmos {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .whatCanIDo h1 {
+    font-size: 3vw;
+  }
+
+  .what-wrapper p {
+    font-size: 1.6vw;
+  }
+
+  .chmurka {
+    font-size: 1.1vw;
+  }
 }
 
+@media (min-width: 768px){
+  .post p {
+    font-size: 2.2vw;
+  }
+  .safe-earth {
+    font-size: 8vw;
+  }
 
+  .post {}
 
+  .about-wrapper-row {
+    width: 83%;
+  }
 
+  .post h2 {
+    font-size: 3.4vw;
+  }
 
+  .whatCanIDo h1 {
+    font-size: 3.2vw;
+  }
 
+  .what-wrapper p {
+    font-size: 1.8vw;
+  }
 
+  .wykrzyknik {
+    width: 10%;
+  }
 
-/* header section */
+  .wykrzyknik span{
+    font-size: 6vw;
+  }
+
+  .cosmos .chmurka {
+    top: 50%;
+    left: 30%;
+  }
+
+  .forest .chmurka  {
+    top: 40%;
+    left: 30%;
+  }
+
+  .air .chmurka {
+    top: 30%;
+    left: 30%;
+  }
+
+  .chmurka {
+    width: 50%;
+    font-size: 2vw;
+  }
+
+  .chmurka::before {
+    content: '';
+    display: block;
+    padding-top: 56.25%;
+  }
+
+  .water .chmurka {
+    top: 40%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px){
+  .post p {
+    font-size: 6vw;
+  }
+  .safe-earth {
+    font-size: 15vw;
+    width: 95%;
+  }
+
+  .about-wrapper-row {
+    flex-direction: column;
+    padding-top: 12%;
+  }
+
+  .about {
+    height: auto;
+  }
+
+  .header-wrapper h1 {
+    font-size: 6vw;
+    width: 60%;
+  }
+
+  .post {
+    width: 90%;
+    padding: 2%;
+  }
+
+  .about-wrapper-row {
+    width: 83%;
+  }
+
+  .post h2 {
+    font-size: 10vw;
+  }
+
+  .whatCanIDo h1 {
+    font-size: 3.2vw;
+  }
+
+  .what-wrapper p {
+    font-size: 1.8vw;
+  }
+
+  .wykrzyknik {
+    width: 10%;
+  }
+
+  .wykrzyknik span{
+    font-size: 6vw;
+  }
+
+  .cosmos .chmurka {
+    top: 50%;
+    left: 30%;
+  }
+
+  .forest .chmurka  {
+    top: 40%;
+    left: 30%;
+  }
+
+  .air .chmurka {
+    top: 30%;
+    left: 30%;
+  }
+
+  .chmurka {
+    width: 50%;
+    font-size: 2vw;
+  }
+
+  .chmurka::before {
+    content: '';
+    display: block;
+    padding-top: 56.25%;
+  }
+
+  .water .chmurka {
+    top: 40%;
+  }
 }
