@@ -533,7 +533,7 @@ ul.navigation li.active--menu a {
     cursor: pointer;
     animation: pulse2 1.5s infinite;
     border: 3px white solid;
-    z-index: 50;
+    z-index: 97;
 }
 
 .wykrzyknik::before {
@@ -998,10 +998,12 @@ ul.navigation--mobile li a {
   }
 
   .what-wrapper {
+    position: absolute;
     height: auto;
+    z-index: 94;
     flex-direction: column;
     width: 100%;
-    padding: 12% 0;
+    padding: 18% 0;
     justify-content: space-between;
     text-shadow: 2px 1px #000000;
 
@@ -1021,6 +1023,7 @@ ul.navigation--mobile li a {
   }
 
 
+
   .whatCanIDo {
     /* height: auto; */
   }
@@ -1030,17 +1033,17 @@ ul.navigation--mobile li a {
 
   .what-right span p {
     font-size: 4vw;
-    padding: 5% 0;
+    padding: 9% 0;
     width: 90%;
   }
 
-  .map {
+  .map-bg {
     display: none;
   }
 
   .what-left span p {
     font-size: 4vw;
-    padding: 5% 0;
+    padding: 9% 0;
     width: 90%;
   }
 
