@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SAFE EARTH - OUR EARTH!</title>
 
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="pliki_mapka/dist/countUp.js"></script>
 
@@ -49,6 +50,7 @@
                    <li class="menu" value="8" > <a onclick="item(8)">NAWYKI</a></li>
                    <li class="menu" value="9" > <a onclick="item(9)">MAPA</a></li>
                    <li class="menu" value="10" > <a onclick="item(10)">WODA</a></li>
+                   <li class="menu game" value="11" > <a onclick="item(11)">GRA</a></li>
                  </ul>
                 </div>
 
@@ -64,6 +66,7 @@
                      <li class="menu" value="8" > <a onclick="item(8)">NAWYKI</a></li>
                      <li class="menu" value="9" > <a onclick="item(9)">MAPA</a></li>
                      <li class="menu" value="10" > <a onclick="item(10)">WODA</a></li>
+                     <li class="menu game" value="11" > <a onclick="item(11)">GRA</a></li>
                  </ul>
              </nav>
              <div class="header-wrapper">
@@ -207,7 +210,10 @@
           </div>
         </section>
         <section class="whatCanIDo section" id="what">
-          <h1>NAWYKI, KTÓRE POMOGĄ CI POPRAWIĆ OTOCZENIE W KTÓRYM ŻYJESZ!</h1>
+
+          <div class="what-bg">
+            <h1>NAWYKI, KTÓRE POMOGĄ CI POPRAWIĆ OTOCZENIE W KTÓRYM ŻYJESZ!</h1>
+
           <div class="what-wrapper">
             <div class="what-left">
               <span><div class="what-img"><img src="img/habits/smieciicon1.svg" alt='smiec'></div>
@@ -237,6 +243,7 @@
               <span><div class="what-img"><img src="img/habits/smieciicon8.svg" alt='smiec'></div>
                 <p><b>Nie śmieć!</b> To tylko chwila, aby przejśc parę metrów do śmietnika. Chwila ta definiuje nas, jako ludzi świadomych. Nie chodzi tu też o strach przed mandatem, ale o fakt bycia uczciwym wobec siebie i osób z Twojego otoczenia.</p></span>
             </div>
+          </div>
           </div>
         </section>
 
@@ -801,6 +808,15 @@
         </section>
 
     </div>
+    <section class="game" id="game">
+      <div id="game_div">
+
+      	<canvas id="canvas" style="clear:both">
+          <a id="score" style="float: right;">Wynik: 0</a>
+        </canvas>
+      	<script src="js/game.js"></script>
+      </div>
+    </section>
 
     <script src="js/script.js"></script>
 	<script src="pliki_mapka/script.js"></script>
