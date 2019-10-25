@@ -1018,8 +1018,16 @@ ul.navigation--mobile li a {
 
   .whatCanIDo {
     position: relative;
+    display: block;
     height: auto;
     background: black;
+  }
+
+  .what-bg {
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .what-wrapper {
