@@ -257,19 +257,21 @@ ul.navigation li.active--menu a {
   display: flex;
   flex-direction: column;
   align-content: space-around;
+
   color: white;
-
-
-}
-
-.what-bg {
   background: url(../img/habits.png);
   background-size: 100vw 100vh;
 }
 
+/* .what-bg {
+
+  background-repeat: no-repeat;
+} */
+
 .what-wrapper {
   height: 90%;
   width: 100%;
+  position: absolute;
   display: flex;
   justify-content: space-around;
   /* align-items: center; */
@@ -884,7 +886,7 @@ ul.navigation--mobile li a {
     background-size: cover;
     background-position: center;
   }
-  .whatCanIDo {
+  .what-bg {
     background-size: cover;
     background-position: center;
   }
@@ -1012,7 +1014,7 @@ ul.navigation--mobile li a {
 }
 
 @media (min-width: 320px) and (max-width: 767px){
-  .what-wrapper {
+  /* .what-wrapper {
     height: auto;
   }
 
@@ -1032,7 +1034,12 @@ ul.navigation--mobile li a {
 
   .what-wrapper {
     position: relative;
-  }
+  } */
+
+    .whatCanIDo {
+      background-size: cover;
+      background-position: center;
+    }
 
 
     .hamburger {
