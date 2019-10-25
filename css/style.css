@@ -1042,7 +1042,7 @@ ul.navigation--mobile li a {
 
     .whatCanIDo {
       height: auto;
-
+      background-image: linear-gradient(#472B14,#15434f );
       background-size: cover;
       background-position: center;
     }
