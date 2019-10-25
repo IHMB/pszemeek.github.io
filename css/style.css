@@ -1022,7 +1022,7 @@ ul.navigation--mobile li a {
 
 
   .whatCanIDo {
-    height: auto;
+    /* height: auto; */
   }
   .whatCanIDo h1 {
     font-size: 6vw;
