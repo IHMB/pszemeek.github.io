@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SAFE EARTH - OUR EARTH!</title>
 
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="pliki_mapka/dist/countUp.js"></script>
 
@@ -49,6 +50,7 @@
                    <li class="menu" value="8" > <a onclick="item(8)">NAWYKI</a></li>
                    <li class="menu" value="9" > <a onclick="item(9)">MAPA</a></li>
                    <li class="menu" value="10" > <a onclick="item(10)">WODA</a></li>
+                   <li class="menu game" value="11" > <a onclick="item(11)">GRA</a></li>
                  </ul>
                 </div>
 
@@ -64,6 +66,7 @@
                      <li class="menu" value="8" > <a onclick="item(8)">NAWYKI</a></li>
                      <li class="menu" value="9" > <a onclick="item(9)">MAPA</a></li>
                      <li class="menu" value="10" > <a onclick="item(10)">WODA</a></li>
+                     <li class="menu game" value="11" > <a onclick="item(11)">GRA</a></li>
                  </ul>
              </nav>
              <div class="header-wrapper">
@@ -100,7 +103,7 @@
 
               <div class="post"><h2>Kogo to dotyczy?</h2><p>Każdego dnia, każdy z nas, nawet nie zdając sobie z tego sprawy, przyczynia się do produkowania śmieci. Z tego powodu poruszony przez nas temat jest bez wątpienia problemem globalnym i dotyczy każdego.</p></div>
 
-              <div class="post"><h2>Lorem ipsum dolor sit amet.</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam commodi accusantium atque tempora velit facere sit quasi delectus, maiores molestiae esse, consectetur. Esse optio at, accusantium tenetur aperiam minima earum.</p></div>
+              <div class="post"><h2>Czy to takie trudne?</h2><p>Segregacja odpadów to z założenia bardzo prosta rzecz. Często jednak o niej zapominamy. Będzie to dla nas ogromny sukces, jeżeli wyciągniesz z tej strony jakąkolwiek wiedzę i zastosujesz ją w praktyce.</p></div>
             </div>
 
           </div>
@@ -207,7 +210,10 @@
           </div>
         </section>
         <section class="whatCanIDo section" id="what">
-          <h1>NAWYKI, KTÓRE POMOGĄ CI POPRAWIĆ OTOCZENIE W KTÓRYM ŻYJESZ!</h1>
+
+          <div class="what-bg">
+            <h1>NAWYKI, KTÓRE POMOGĄ CI POPRAWIĆ OTOCZENIE W KTÓRYM ŻYJESZ!</h1>
+
           <div class="what-wrapper">
             <div class="what-left">
               <span><div class="what-img"><img src="img/habits/smieciicon1.svg" alt='smiec'></div>
@@ -237,6 +243,7 @@
               <span><div class="what-img"><img src="img/habits/smieciicon8.svg" alt='smiec'></div>
                 <p><b>Nie śmieć!</b> To tylko chwila, aby przejśc parę metrów do śmietnika. Chwila ta definiuje nas, jako ludzi świadomych. Nie chodzi tu też o strach przed mandatem, ale o fakt bycia uczciwym wobec siebie i osób z Twojego otoczenia.</p></span>
             </div>
+          </div>
           </div>
         </section>
 
@@ -488,7 +495,7 @@
     	 			<div class="info-text">
     	 				<p>CAŁKOWITA POPULACJA<br>
 
-    						<span class = "apoln-numbers" id = "azja-num-population">0</span>
+    						<span class = "apoln-numbers" id = "azja-num-population">0</span> MLD
     	 				</p>
 
     	 				 <p>GENEROWANE ŚMIECI <br>
@@ -524,7 +531,7 @@
     	 			<div class="info-text">
     	 				<p>CAŁKOWITA POPULACJA<br>
 
-    						<span class = "apoln-numbers" id = "europa-num-population">0</span>
+    						<span class = "apoln-numbers" id = "europa-num-population">0</span> MLN
     	 				</p>
 
     	 				 <p>GENEROWANE ŚMIECI <br>
@@ -560,7 +567,7 @@
     	 			<div class="info-text">
     	 				<p>CAŁKOWITA POPULACJA<br>
 
-    						<span class = "apoln-numbers" id = "australia-num-population">0</span>
+    						<span class = "apoln-numbers" id = "australia-num-population">0</span> MLN
     	 				</p>
 
     	 				 <p>GENEROWANE ŚMIECI <br>
@@ -596,7 +603,7 @@
     	 			<div class="info-text">
     	 				<p>CAŁKOWITA POPULACJA<br>
 
-    						<span class = "apoln-numbers" id = "afryka-num-population">0</span>
+    						<span class = "apoln-numbers" id = "afryka-num-population">0</span> MLD
     	 				</p>
 
     	 				 <p>GENEROWANE ŚMIECI <br>
@@ -632,7 +639,7 @@
     	 			<div class="info-text">
     	 				<p>CAŁKOWITA POPULACJA<br>
 
-    						<span class = "apoln-numbers" id = "ameryka_poludniowa-num-population">0</span>
+    						<span class = "apoln-numbers" id = "ameryka_poludniowa-num-population">0</span> MLN
     	 				</p>
 
     	 				 <p>GENEROWANE ŚMIECI <br>
@@ -666,7 +673,7 @@
     	 			<div class="info-text">
     	 				<p>CAŁKOWITA POPULACJA<br>
 
-    						<span class = "apoln-numbers" id = "ameryka_polnocna-num-population">0</span>
+    						<span class = "apoln-numbers" id = "ameryka_polnocna-num-population">0</span> MLN
     	 				</p>
 
     	 				 <p>GENEROWANE ŚMIECI <br>
@@ -695,11 +702,11 @@
     <script type="text/javascript">
     	$('#azja').click(function(){
 
-    		var p = new CountUp("azja-num-population",0,443633291);
+    		var p = new CountUp("azja-num-population",0,4.463,3);
 
-    		var t = new CountUp("azja-num-trash",0,17123893);
+    		var t = new CountUp("azja-num-trash",0,8307874500);
 
-    		var to = new CountUp("azja-num-to",0,289.4,1,4);
+    		var to = new CountUp("azja-num-to",0,1861.5,1,4);
 
 
     		p.start();
@@ -710,11 +717,11 @@
 
     	$('#afryka').click(function(){
 
-    		var p = new CountUp("afryka-num-population",0,443633291);
+    		var p = new CountUp("afryka-num-population",0,1.216,1);
 
-    		var t = new CountUp("afryka-num-trash",0,17155893);
+    		var t = new CountUp("afryka-num-trash",0,1331520000);
 
-    		var to = new CountUp("afryka-num-to",0,289.4,1,4);
+    		var to = new CountUp("afryka-num-to",0,1095,4);
 
 
     		p.start();
@@ -725,11 +732,11 @@
 
     	$('#europa').click(function(){
 
-    		var p = new CountUp("europa-num-population",0,443633291);
+    		var p = new CountUp("europa-num-population",0,741.4,1);
 
-    		var t = new CountUp("europa-num-trash",0,17123893);
+    		var t = new CountUp("europa-num-trash",0,35216500);
 
-    		var to = new CountUp("europa-num-to",0,486.5,1,4);
+    		var to = new CountUp("europa-num-to",0,475.5,1,4);
 
 
     		p.start();
@@ -740,11 +747,11 @@
 
     	$('#australia').click(function(){
 
-    		var p = new CountUp("australia-num-population",0,443633291);
+    		var p = new CountUp("australia-num-population",0,24.6,1);
 
-    		var t = new CountUp("australia-num-trash",0,17123893);
+    		var t = new CountUp("australia-num-trash",0,66420000);
 
-    		var to = new CountUp("australia-num-to",0,289.4,1,4);
+    		var to = new CountUp("australia-num-to",0,2700,0,4);
 
 
     		p.start();
@@ -755,11 +762,11 @@
 
     	$('#ameryka_poludniowa').click(function(){
 
-    		var p = new CountUp("ameryka_poludniowa-num-population",0,443633291);
+    		var p = new CountUp("ameryka_poludniowa-num-population",0,422.5,1);
 
-    		var t = new CountUp("ameryka_poludniowa-num-trash",0,17123893);
+    		var t = new CountUp("ameryka_poludniowa-num-trash",0,2158975000);
 
-    		var to = new CountUp("ameryka_poludniowa-num-to",0,289.4,1,4);
+    		var to = new CountUp("ameryka_poludniowa-num-to",0,5110.4,1,4);
 
 
     		p.start();
@@ -769,11 +776,11 @@
 
     	$('#ameryka_polnocna').click(function(){
 
-    		var p = new CountUp("ameryka_polnocna-num-population",0,443633291);
+    		var p = new CountUp("ameryka_polnocna-num-population",0,579);
 
-    		var t = new CountUp("ameryka_polnocna-num-trash",0,17123893);
+    		var t = new CountUp("ameryka_polnocna-num-trash",0,545244300);
 
-    		var to = new CountUp("ameryka_polnocna-num-to",0,289.4,1,4);
+    		var to = new CountUp("ameryka_polnocna-num-to",0,941.7,1,4);
 
 
     		p.start();
@@ -801,6 +808,15 @@
         </section>
 
     </div>
+    <section class="game" id="game">
+      <div id="game_div">
+
+      	<canvas id="canvas" style="clear:both">
+          <a id="score" style="float: right;">Wynik: 0</a>
+        </canvas>
+      	<script src="js/game.js"></script>
+      </div>
+    </section>
 
     <script src="js/script.js"></script>
 	<script src="pliki_mapka/script.js"></script>

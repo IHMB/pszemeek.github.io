@@ -15,6 +15,7 @@ body {
     padding: 0;
 }
 
+
 body {
   width: 100%;
 }
@@ -255,13 +256,21 @@ ul.navigation li.active--menu a {
 .whatCanIDo {
   display: flex;
   flex-direction: column;
+  align-content: space-around;
   color: white;
+
+
+}
+
+.what-bg {
+  height: 100%;
+  /* position: absolute; */
   background: url(../img/habits.png);
   background-size: 100vw 100vh;
 }
 
 .what-wrapper {
-  height: 100%;
+  height: 90%;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -271,12 +280,14 @@ ul.navigation li.active--menu a {
 
 .what-left {
   display: flex;
+  height: 100%;
   flex-direction: column;
   width: 43%;
   justify-content: space-around;
 }
 
 .what-right {
+  height: 100%;
   display: flex;
   flex-direction: column;
   width: 43%;
@@ -695,8 +706,20 @@ ul.navigation li.active--menu a {
   display: none;
 }
 
+div.game_div {
+  position: relative;
+  height: auto;
+}
+
 /* media */
 @media (min-width: 320px) and (max-width: 1024px){
+
+
+
+
+  .game {
+    display: none;
+  }
 
   .forest {
     background-size: cover;
@@ -710,7 +733,7 @@ ul.navigation li.active--menu a {
     background-size: cover;
     background-position: center;
   }
-  .whatCanIDo {
+  .what-bg {
     background-size: cover;
     background-position: center;
   }
@@ -893,6 +916,10 @@ ul.navigation--mobile li a {
   }
 }
 
+.game {
+  height: auto;
+}
+
 @media (min-width: 768px) and (max-width: 1024px){
   .post p {
     font-size: 2vw;
@@ -987,6 +1014,20 @@ ul.navigation--mobile li a {
 }
 
 @media (min-width: 320px) and (max-width: 767px){
+  .what-wrapper {
+    height: auto;
+  }
+
+  .whatCanIDo {
+    position: relative;
+    height: auto;
+    background: black;
+  }
+
+  .what-wrapper {
+    position: relative;
+  }
+
 
     .hamburger {
       left: 5%;
@@ -998,12 +1039,12 @@ ul.navigation--mobile li a {
   }
 
   .what-wrapper {
-    position: absolute;
-    height: auto;
+    position: auto;
+    height: 100%;
     z-index: 94;
     flex-direction: column;
     width: 100%;
-    padding: 18% 0;
+    /* padding: 18% 0; */
     justify-content: space-between;
     text-shadow: 2px 1px #000000;
 
@@ -1037,7 +1078,7 @@ ul.navigation--mobile li a {
     width: 90%;
   }
 
-  .map-bg {
+  .map {
     display: none;
   }
 

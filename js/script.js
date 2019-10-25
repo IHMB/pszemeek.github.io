@@ -30,6 +30,10 @@ function loader() {
 
   var video = document.querySelector('#myVideo');
   video.play()
+  setTimeout(function(){
+    overlay.style.display='none';
+  },1000);
+
 }
 
 window.addEventListener('load', function(){
@@ -56,7 +60,7 @@ let selected = 0;
 let isanimating = false;
 
 
-const sections = Array('#header','#about','#cosmos','#air','#factory','#calculator','#forest','#ground','#what','#map','#water');
+const sections = Array('#header','#about','#cosmos','#air','#factory','#calculator','#forest','#ground','#what','#map','#water','#game');
 
 let item = (e) => { //toggling selected nav item
     if(isanimating)
@@ -195,7 +199,6 @@ if ($(window).width() < 1024){
       }, 100);
   })
   }
-
 
 
 
