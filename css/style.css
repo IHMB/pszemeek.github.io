@@ -837,7 +837,7 @@ ul.navigation--mobile li a {
   justify-content: space-around;
 }}
 
-@media (min-width: 1025px) and (max-width: 1400px){
+@media (min-width: 1025px) and (max-width: 1550px){
   .post p {
     font-size: 1.4vw;
   }
