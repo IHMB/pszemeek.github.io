@@ -263,8 +263,6 @@ ul.navigation li.active--menu a {
 }
 
 .what-bg {
-  height: 100%;
-  /* position: absolute; */
   background: url(../img/habits.png);
   background-size: 100vw 100vh;
 }
