@@ -22,7 +22,7 @@ body {
 .arrow {
   position: absolute;
   bottom: 2%;
-  left: 45%;
+  left: 50%;
   cursor: pointer;
   z-index: 97;
   /* transform: rotate(90deg); */
@@ -425,7 +425,7 @@ ul.navigation li.active--menu a {
   position: absolute;
   top: 20%;
   left: 45%;
-  font-size: 20px;
+  font-size: 18px;
   transform: scale(0);
   transition: .5s ease-in-out;
   /* padding: 0 20px; */
@@ -698,6 +698,35 @@ ul.navigation li.active--menu a {
 /* media */
 @media (min-width: 320px) and (max-width: 1024px){
 
+  .forest {
+    background-size: cover;
+    background-position: right;
+  }
+  .ground {
+    background-size: cover;
+    background-position: right;
+  }
+  .water {
+    background-size: cover;
+    background-position: center;
+  }
+  .whatCanIDo {
+    background-size: cover;
+    background-position: center;
+  }
+  .factory {
+    background-size: cover;
+    background-position: center;
+  }
+  .air {
+    background-size: cover;
+    background-position: center;
+  }
+  .cosmos {
+    background-size: cover;
+    background-position: center;
+  }
+
 /* hamburger menu */
 nav ul.navigation {
   display: none;
@@ -808,7 +837,7 @@ ul.navigation--mobile li a {
   justify-content: space-around;
 }}
 
-@media (max-width: 1400px){
+@media (min-width: 1025px) and (max-width: 1400px){
   .post p {
     font-size: 1.4vw;
   }
@@ -864,12 +893,32 @@ ul.navigation--mobile li a {
   }
 }
 
-/* @media (max-width: 768px){
+@media (min-width: 768px) and (max-width: 1024px){
   .post p {
-    font-size: 2.2vw;
+    font-size: 2vw;
   }
+  .navigation--mobile {
+    height: 100%;
+    z-index: 98;
+    width: 25%;
+    display: fixed;
+    /* padding-top: 20%; */
+    position: fixed;
+    color: white;
+    font-size: 2vw;
+    background-color: #333333;
+    list-style: none;
+  }
+  .navigation--mobile li a {
+    font-size: 2vw;
+  }
+
+  .header-wrapper h1 {
+    font-size: 3vw;
+  }
+
   .safe-earth {
-    font-size: 8vw;
+    font-size: 7vw;
   }
 
   .post {}
@@ -879,11 +928,19 @@ ul.navigation--mobile li a {
   }
 
   .post h2 {
-    font-size: 3.4vw;
+    font-size: 3.2vw;
   }
 
   .whatCanIDo h1 {
     font-size: 3.2vw;
+  }
+
+  .what-right span p{
+    font-size: 1.6vw;
+  }
+
+  .what-left span p {
+    font-size: 1.6vw;
   }
 
   .what-wrapper p {
@@ -927,9 +984,9 @@ ul.navigation--mobile li a {
   .water .chmurka {
     top: 40%;
   }
-} */
+}
 
-@media (min-width: 320px) and (max-width: 768px){
+@media (min-width: 320px) and (max-width: 767px){
 
     .hamburger {
       left: 5%;
@@ -938,6 +995,61 @@ ul.navigation--mobile li a {
 
   .mobile-menu {
     width: 100%;
+  }
+
+  .what-wrapper {
+    height: auto;
+    flex-direction: column;
+    width: 100%;
+    padding: 12% 0;
+    justify-content: space-between;
+    text-shadow: 2px 1px #000000;
+
+  }
+
+  .what-left {
+    justify-content: space-around;;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+  }
+  .what-right {
+    justify-content: space-around;
+    /* align-items: center; */
+    width: 100%;
+    height: 40%;
+  }
+
+
+  .whatCanIDo {
+    height: auto;
+  }
+  .whatCanIDo h1 {
+    font-size: 6vw;
+  }
+
+  .what-right span p {
+    font-size: 4vw;
+    padding: 5% 0;
+    width: 90%;
+  }
+
+  .map {
+    display: none;
+  }
+
+  .what-left span p {
+    font-size: 4vw;
+    padding: 5% 0;
+    width: 90%;
+  }
+
+  .what-img img{
+    display: none;
+  }
+
+  .what-img {
+    display: none;
   }
 
   .navigation-mobile{
@@ -981,10 +1093,6 @@ ul.navigation--mobile li a {
 
   .post h2 {
     font-size: 10vw;
-  }
-
-  .whatCanIDo h1 {
-    font-size: 3.2vw;
   }
 
   .what-wrapper p {

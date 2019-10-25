@@ -179,6 +179,9 @@ for (var i = 0; i < mlistItem.length; i++){
   });
 }
 
+// reloading page if widnow has been resized
+
+window.onresize = function(){ location.reload(); }
 
 
 
